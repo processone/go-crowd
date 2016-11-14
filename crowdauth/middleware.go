@@ -3,15 +3,16 @@
 // Goals:
 //  1) drop-in authentication against Crowd SSO
 //  2) make it easy to use Crowd SSO as part of your own auth flow
-package crowdauth // import "go.jona.me/crowd/crowdauth"
+package crowdauth
 
 import (
 	"errors"
-	"go.jona.me/crowd"
 	"html/template"
 	"log"
 	"net/http"
 	"time"
+
+	"github.com/processone/go-crowd"
 )
 
 type SSO struct {
